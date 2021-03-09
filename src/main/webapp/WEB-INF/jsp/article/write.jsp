@@ -1,12 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<c:set var="pageTitle" value="${board.name} 게시물 리스트" />
+<%@ include file="../part/head.jspf"%>
 	<script>
 		var ArticleWriterForm__submitDone = false;
 
@@ -35,7 +31,7 @@
 			form.submit();
 		}
 	</script>
-	<form method="POST" action="doWrite"
+	<form method="POST" action="${board.code}-doWrite"
 		onsubmit="ArticleWriteForm__submit(this); return false;">
 		<div>
 			<span>제목</span> <input type="text" name="title" />
@@ -49,5 +45,4 @@
 			<button type="submit">작성</button>
 		</div>
 	</form>
-</body>
-</html>
+<%@ include file="../part/foot.jspf"%>

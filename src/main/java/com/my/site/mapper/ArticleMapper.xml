@@ -2,12 +2,31 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-  <mapper namespace="com.my.site.mapper.ArticleMapper">
+<mapper namespace="com.my.site.mapper.ArticleMapper">
 	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
 		INSERT
 		INTO article
 		SET title = #{title},
-		body = #{body}
+		body = #{body},
+		boardId = #{boardId}
 	</insert>
-	
+
+	<select id="getArticleList" resultMap="article">
+		SELECT *
+		FROM article
+		WHERE displayStatus = 1
+	</select>
+
+	<resultMap type="Article" id="article">
+		<id property="id" column="id" />
+		<id property="regDate" column="regDate" />
+		<id property="updateDate" column="updateDate" />
+		<id property="delDate" column="delDate" />
+		<id property="displayStatus" column="displayStatus" />
+		<id property="delStatus" column="delStatus" />
+		<id property="title" column="title" />
+		<id property="body" column="body" />
+		<id property="boardId" column="boardId" />
+		<id property="hit" column="hit" />
+	</resultMap>
 </mapper> 

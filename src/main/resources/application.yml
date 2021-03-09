@@ -11,9 +11,9 @@ spring:
     username: root
     password: 
     
-#mybatis:
-#  type-aliases-package: com.PB.dto
-#     
+mybatis:
+  type-aliases-package: com.my.site.dto
+     
 ---
 
 spring:

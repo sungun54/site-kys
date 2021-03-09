@@ -1,0 +1,179 @@
+.l-wrap--index .l-container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.l-container {
+	position: relative;
+    min-height: 700px;
+    padding-bottom: 120px;
+}
+
+.index-logo {
+    padding: 32px 0 24px;
+}
+
+.index-logo img {
+    display: block;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.summoner-search-form {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-top:60px;
+}
+
+.summoner-search-form__text {
+    display: block;
+    width: 100%;
+    padding: 15px 150px 18px 17px;
+    background: none;
+    border: none;
+    line-height: 17px;
+    font-size: 14px;
+    color: #9b9b9b;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.summoner-search-form .btn {
+    display: flex;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-top:10px;
+    margin-right:10px;
+    height: 30px;
+    border: none;
+}
+
+.summoner-search-extra {
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display: table;
+}
+
+.summoner-search-extra--hide {
+    display: none;
+}
+
+.summoner-search-form .summoner-search-extra {
+    top: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.summoner-search-extra .summoner-search-history {
+    display: table-cell;
+    vertical-align: top;
+    width: 380px;
+    position: relative;
+    background: #fff;
+}
+
+.summoner-search-history {
+    width: 100%;
+}
+
+.summoner-search-history__title {
+    display: table;
+    width: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.summoner-search-history__title li.active {
+    background: #fff;
+    color: #4a4a4a;
+}
+
+.summoner-search-history__title li {
+    width: 50%;
+    display: table-cell;
+    background: #e3e3e3;
+    color: #9c9c9c;
+}
+
+.summoner-search-history__title a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.summoner-search-history__list {
+    padding: 5px 20px 20px 0;
+}
+
+.summoner-search-history__message {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.summoner-search-history__message span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.summoner-search-history__message img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.championLotaion {
+	position: position;
+    width: 1080px;
+    margin: 100px auto;
+    border-radius: 2px;
+    padding: 130px 0;
+    background-color: #fff;
+}
+
+.championLotaion > div {
+	display: block;
+    width: 100%;
+    padding: 15px 150px 18px 17px;
+    background: none;
+    border: none;
+    line-height: 17px;
+    font-size: 14px;
+    color: #9b9b9b;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.lotaion-news {
+    background-color: red;
+    height: 20px;
+    text-align: left;
+    position: relative;
+    padding: 3px 3px 3px 6px;
+    border: 1px solid white;
+    color: #FFF;
+}
+
+.freeChampionList {
+	width:63px;
+	height:58px; 
+	display:inline-block;
+	position:relative;
+	margin:0 20px;	
+}
+
+.freeChampionList > img {
+    border: 1px solid white;
+    width:80px;
+}
