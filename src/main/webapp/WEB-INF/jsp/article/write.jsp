@@ -19,9 +19,6 @@
 				return;
 			}
 
-			var bodyEditor = $(form).find('.toast-editor.input-body').data(
-					'data-toast-editor');
-			var body = bodyEditor.getMarkdown().trim();
 			if (body.length == 0) {
 				bodyEditor.focus();
 				alert('특이사항을 입력해주세요.');

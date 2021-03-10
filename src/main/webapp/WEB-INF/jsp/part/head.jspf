@@ -35,11 +35,6 @@
 <!-- 공통 JS -->
 <script src="/resource/common/common.js"></script>
 
-<!-- 공통 App CSS -->
-<link rel="stylesheet" href="/resource/app/app.css" />
-<!-- 공통 App JS -->
-<script src="/resource/app/app.js"></script>
-
 <!-- head CSS -->
 <link rel="stylesheet" href="/resource/home/head.css" />
 <!-- head JS -->
@@ -58,6 +53,9 @@ var param = ${paramJson};
 	<div class="l-menu">
 		<ul class="menu">
 			<li class = "menu__item"><a href="/user/home/main">HOME</a></li>
+			<li class = "menu__item"><a href="/usr/article/notice-list">공지사항</a></li>
 			<li class = "menu__item"><a href="/usr/article/free-list">자유게시판</a></li>
+			<li class = "menu__item"><a href="/usr/member/join">회원가입</a></li>
+			<li class = "menu__item"><a href="/usr/member/login">로그인</a></li>
 		</ul>
 	</div>
