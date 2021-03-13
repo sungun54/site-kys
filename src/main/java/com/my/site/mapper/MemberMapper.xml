@@ -38,6 +38,12 @@
 		`name` = #{name},
 		nickname = #{nickname},
 		email = #{email}
-	</insert>
-
+	</insert>	
+	
+	<select id="getMemberByLoginId" resultType="Member">
+		SELECT *
+		FROM
+		member
+		WHERE loginId = #{loginId}
+	</select>
 </mapper> 

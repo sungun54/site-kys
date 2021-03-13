@@ -5,6 +5,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.my.site.dto.Member;
 import com.my.site.dto.ResultData;
 import com.my.site.mapper.MemberMapper;
 import com.my.site.util.Util;
@@ -51,6 +52,10 @@ public class MemberService {
 		int memberId = Util.getAsInt(param.get("id"));
 
 		return memberId;
+	}
+
+	public Member getMemberByLoginId(String loginId) {		
+		return getMemberByLoginId(loginId);
 	}
 
 }

@@ -4,6 +4,8 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.my.site.dto.Member;
+
 @Mapper
 public interface MemberMapper {
 
@@ -11,5 +13,6 @@ public interface MemberMapper {
 	int getNicknameDupCount(String nickname);
 	int getEmailDupCount(String email);
 	void insert(Map<String, Object> param);
+	Member getMemberByLoginId(String loginId);
 
 }
